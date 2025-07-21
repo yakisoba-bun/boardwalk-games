@@ -28,6 +28,16 @@
         color: var(--highlight-color);
     }
 
+    /* Navbar styling */
+
+    #navbar {
+        background-color: var(--primary-color);
+    }
+
+    #navbar .logo {
+        width: 30px;
+    }
+
     /* Grid visualisation CSS for testing 
 
     .container,
