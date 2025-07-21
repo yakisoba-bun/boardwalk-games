@@ -28,7 +28,7 @@
         color: var(--highlight-color);
     }
 
-    /* Grid visualisation CSS for testing */
+    /* Grid visualisation CSS for testing 
 
     .container,
     .row {
@@ -38,4 +38,4 @@
     .col-12 {
         border: 2px solid white;
         background-color: lightgray;
-    }
+    } */
