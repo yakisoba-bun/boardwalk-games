@@ -106,6 +106,12 @@
 
     #events {
         background-color: white;
+        padding-top: 5px;
+    }
+
+    #events .custom-button-outline {
+        max-width: 150px;
+        margin: 25px;
     }
 
     /* Footer / Contact */
@@ -158,6 +164,8 @@
     */
 
     /* Media queries */
+
+    /* Small devices, mobiles (320px and up) */
 
     /* Medium devices, tablets (768px and up) */
     @media screen and (min-width: 768px) {
