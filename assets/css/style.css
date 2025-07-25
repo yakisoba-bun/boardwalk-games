@@ -102,6 +102,12 @@
         border: none;
     }
 
+    /* Events */
+
+    #events {
+        background-color: white;
+    }
+
     /* Footer / Contact */
 
     #contact {
