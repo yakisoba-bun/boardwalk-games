@@ -25,7 +25,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo-sm-white.png" alt="Boardwalk Games logo" class="logo">
@@ -40,16 +40,16 @@
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="index.html#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
+                        <a href="index.html#events" class="nav-link">Events</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="game-library.html">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="index.html#contact">Contact</a>
                     </li>
                     <li class="nav-item">
                         <a href="booking.html" class="btn custom-button-filled ms-lg-3">Book now</a>
@@ -127,7 +127,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-2.webp" alt="Mystic Woods board game box">
+                        <img class="card-img-top" src="assets/images/new-games-2.webp"
+                            alt="Mystic Woods board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Mystic Woods</h3>
                             <p class="card-text">Enter the enchanted forest of Mystic Woods. Combine spells, gather
@@ -139,7 +140,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-3.webp" alt="Captain's Gambit board game box">
+                        <img class="card-img-top" src="assets/images/new-games-3.webp"
+                            alt="Captain's Gambit board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Captain's Gambit</h3>
                             <p class="card-text">Engage in battles, form fleeting alliances, and navigate treacherous
@@ -151,7 +153,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/new-games-4.webp" alt="Critter Quest board game box">
+                        <img class="card-img-top" src="assets/images/new-games-4.webp"
+                            alt="Critter Quest board game box">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Critter Quest</h3>
                             <p class="card-text">Solve simple puzzles, collect magical gems, and help friends along the
@@ -171,7 +174,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-1.webp" alt="Settlers of Catan board game">
+                        <img class="card-img-top" src="assets/images/fav-games-1.webp"
+                            alt="Settlers of Catan board game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Settlers of Catan</h3>
                             <p class="card-text">Picture yourself in the era of discoveries: after a long voyage of
@@ -195,7 +199,8 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img class="card-img-top" src="assets/images/fav-games-3.webp" alt="Exploding Kittens card game">
+                        <img class="card-img-top" src="assets/images/fav-games-3.webp"
+                            alt="Exploding Kittens card game">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Exploding Kittens</h3>
                             <p class="card-text">Exploding Kittens is a kitty-powered version of Russian Roulette.
@@ -221,60 +226,64 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section id="reserve-game-form" class="section container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h2 class="display-6 text-center">Reserve a game</h2>
+                    <p>
+                        Reserve a board game for your next visit to Boardwalk Games. Pick
+                        your challenge, and let the adventure begin! Fill out your details
+                        and preferred game below, and we'll have it set aside for you when
+                        you arrive.
+                    </p>
 
-    <section id="reservation-form" class="container section">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center">
-                <h1 class="display-3">Reserve a game</h1>
-            </div>
-        </div>
-        <div class="col-10 text-start">
-            <p class="my-4">
-                Reserve a board game for your next visit to Boardwalk Games. Pick your challenge, and let the adventure
-                begin! Fill out your details and preferred game below, and we'll have it set aside for you when you arrive.
-            </p>
-        </div>
-    
-        <div class="col-12 col-md-10">
-            <form action="success.html" method="GET">
-                <div class="row">
-                    <div class="col-12 col-lg-4 mb-3">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input class="form-control" id="full-name" name="full-name" type="text" required>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-3">
-                        <label for="phone" class="form-label">Phone number</label>
-                        <input class="form-control" id="phone" name="phone" type="number" required>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-3">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input class="form-control" id="email" name="email" type="email" required>
-                    </div>
-                    <div class="col-12 col-lg-8 mb-3">
-                        <label for="game-selection" class="form-label">Game selection</label>
-                        <select id="game-selection" class="form-select" name="event-type" required>
-                            <option value="" selected>Select game</option>
-                            <option value="galaxy-pioneers">Galaxy Pioneers</option>
-                            <option value="mystic-woods">Mystic Woods</option>
-                            <option value="captains-gambit">Captain's Gambit</option>
-                            <option value="critter-quest">Critter Quest</option>
-                            <option value="catan">Settlers of Catan</option>
-                            <option value="monopoly">Monopoly</option>
-                            <option value="kittens">Exploding Kittens</option>
-                            <option value="cluedo">Cluedo</option>
-                        </select>
-                    </div>
-                    <div class="col-12 col-lg-4 mb-3">
-                        <label for="date" class="form-label">Requested date</label>
-                        <input class="form-control" id="date" name="date" type="date">
-                    </div>
+                    <!-- reserve game form -->
+                    <!-- action set on the form to provide users with feedback when the form has been submitted.
+                            We have not learned how to handle form data yet, so the form data is not actually sent anywhere for this project -->
+                    <form action="success.html" method="GET">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="full-name" class="form-label">Full name</label>
+                                <input id="full-name" type="text" class="form-control" name="full-name" required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="phone-number" class="form-label">Phone number</label>
+                                <input id="phone-number" type="number" class="form-control" name="phone-number"
+                                    required>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input id="email" type="email" class="form-control" name="email" required>
+                            </div>
+                            <div class="col-12 col-lg-8 mb-3">
+                                <label for="game-selection" class="form-label">Select game</label>
+                                <select id="game-selection" class="form-select" name="game-selection" required>
+                                    <!-- value="" makes this option a placeholder and won't be accepted as a valid selection, 
+                                                ensuring the required attribute on the <select> element works -->
+                                    <option value="" selected>Select game</option>
+                                    <option value="galaxy-pioneers">Galaxy Pioneers</option>
+                                    <option value="mystic-woods">Mystic Woods</option>
+                                    <option value="captains-gambit">Captain's Gambit</option>
+                                    <option value="critter-quest">Critter Quest</option>
+                                    <option value="setters-of-catan">Settlers of Catan</option>
+                                    <option value="monopoly">Monopoly</option>
+                                    <option value="exploding-kittens">Exploding Kittens</option>
+                                    <option value="cluedo">Cluedo</option>
+                                </select>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3">
+                                <label for="date" class="form-label">Requested date</label>
+                                <input id="date" type="date" class="form-control" name="date" required>
+                            </div>
+                            <div class="col-12 text-end">
+                                <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-                <button type="submit" class="btn custom-button-outline mt-3">Submit</button>
-            </form>
-        </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </main>
 
     <!-- footer / contact section -->
     <!-- mt-auto added to push footer to the bottom of the page -->
@@ -344,7 +353,6 @@
             </div>
         </div>
     </footer>
-
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
