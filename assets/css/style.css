@@ -109,9 +109,24 @@
         padding-top: 5px;
     }
 
+    #events .table {
+        font-size: 0.7rem;
+    }
+
     #events .custom-button-outline {
         max-width: 150px;
         margin: 25px;
+    }
+
+    .student-discount {
+        background-color: var(--highlight-color);
+        font-weight: bold;
+        color: white;
+        display: block;
+        max-width: 300px;
+        margin: auto;
+        padding: 5px 10px;
+        font-size: 0.8rem;
     }
 
     /* Footer / Contact */
@@ -165,7 +180,17 @@
 
     /* Media queries */
 
-    /* Small devices, mobiles (320px and up) */
+    /* Small devices, mobiles (576px and up) */
+
+    @media screen and (min-width: 576px) {
+        #events .table {
+            font-size: 1rem;
+        }
+
+        .student-discount {
+            font-size: 1rem;
+        }
+    }
 
     /* Medium devices, tablets (768px and up) */
     @media screen and (min-width: 768px) {
@@ -188,6 +213,11 @@
         /* Make all service cards the same height for consistency */
         #services .card-body {
             min-height: 220px;
+        }
+        /* Reservation form */
+
+        #reservation-form .custom-button-outline {
+        margin-left: 974px;
         }
     }
 
